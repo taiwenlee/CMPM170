@@ -3,12 +3,14 @@ INCLUDE Scene2
 INCLUDE Scene3
 INCLUDE Scene4
 
-start
+The sound of my alarm beeping waking me up from my dream, it was the start of a torturous Monday. I have two classes today, one from 10:40-11:55 another from 4:00-5:05.
+->MainLoop
 
 VAR Scene = 0
+VAR Time = 9
+
 
 === MainLoop ===
-    New Scene
 ~ Scene = RANDOM(1, 4)
 
 { 
