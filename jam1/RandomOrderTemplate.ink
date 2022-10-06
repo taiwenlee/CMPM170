@@ -10,6 +10,7 @@ VAR Scene = 0
 VAR Time = 9
 VAR Happiness = 0
 VAR PlayedGame = false
+VAR DoneHomework = false
 
 
 === MainLoop ===

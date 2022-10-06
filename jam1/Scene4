@@ -1,4 +1,8 @@
 === Scene_4 ===
 It's {-Time >  12: {Time} - 12 pm| {Time} am} right now.
-Let's take a nap.
+{
+- Scene_1 and Scene_2 and Scene_3:
+    well there's nothing else I need to do today so lets take a nap.   
+}
+    
 -> MainLoop

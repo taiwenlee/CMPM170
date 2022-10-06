@@ -4,7 +4,8 @@ It's {-Time >  12: {Time} - 12 pm| {Time} am} right now.
 {
 -Time > 16:
     I should've gone to class today but ended up doing other things. I hope there wasn't anything important in the lectures.
-
+- Time > 10:
+    I missed my first class today but I should really go to my second class. The class is CMPM121 which teaches game technologies and so far its been very interesting. Let's go to class.
 }
 
 -> MainLoop

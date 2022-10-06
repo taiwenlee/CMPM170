@@ -16,6 +16,8 @@ There so many things I can do right now, but what I really want to do is play so
 *Do some homework
     I guess its time to do my ECON100A homework that I've been procrastinating. The problems weren't hard but due to how boring it was, Youtube ended up increasing the time I spent on this.
     ~Time += 1
+    ~Happiness -= 1
+    ~DoneHomework = true
     ~PlayedGame = false
     ->pc
 *Stop using my pc
