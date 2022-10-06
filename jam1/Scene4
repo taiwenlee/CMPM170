@@ -2,7 +2,7 @@
 It's {Time >  12: {Time - 12}| {Time}}{Time >= 12: pm| am} right now.
 {
 - Scene_1 and Scene_2 and Scene_3:
-    Well there's nothing else I need to do today so lets take a nap.   
+    Well, there's nothing else I need to do today so let's take a nap.   
     ~Time++
 - Time < 24:
     I'm feeling rather tired...
@@ -13,16 +13,19 @@ It's {Time >  12: {Time - 12}| {Time}}{Time >= 12: pm| am} right now.
 
 === Naps ===
 +{Time < 24 and TakenNap}Go back to sleep
-    well It's not gonna hurt if I sleep more...
-    ~Time+= 2
+    Well, It's not gonna hurt if I sleep more...
+    ~count++
+    ~Time++
     ->Naps
 *{not TakenNap}Lets take a nap
     After an hour passed, I woke up but felt like doing nothing.
-     ~Time++
-     ~TakenNap = true
+    ~count++
+    ~Time++
+    ~TakenNap = true
     ->Naps
 * {TakenNap}get out of bed
-    I really should be getting out of bed now. It's not good for me if i keep staying in bed.
+    {count > 5: That was a {count} hour nap.}
+    I really should be getting out of bed now. It's not good for me if I keep staying in bed.
     -> MainLoop
 *{not TakenNap}Lets not take a nap
     I probably shouldn't get in the habit of taking naps.
