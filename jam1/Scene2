@@ -1,5 +1,5 @@
 === Scene_2 ===
-It's {Time >  12: {Time - 12} pm| {Time} am} right now.
+It's {Time >  12: {Time - 12}| {Time}}{Time >= 12: pm| am} right now.
 
 {
 -Time > 16:

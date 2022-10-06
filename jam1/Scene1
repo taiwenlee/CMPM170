@@ -1,5 +1,5 @@
 === Scene_1 ===
-It's {Time >  12: {Time - 12} pm| {Time} am} right now.
+It's {Time >  12: {Time - 12}| {Time}}{Time >= 12: pm| am} right now.
 Let's hop on my pc.
 There so many things I can do right now, but what I really want to do is play some games right now.
 ->pc
@@ -13,7 +13,7 @@ There so many things I can do right now, but what I really want to do is play so
     ~PlayedGame = true
     ~Time++
     -> pc
-*{HomeworkDue}Do some homework
+*{not HomeworkDue}Do some homework
     I guess its time to do my ECON100A homework that I've been procrastinating. The problems weren't hard but due to how boring it was, Youtube ended up increasing the time I spent on this.
     ~Time++
     ~Happiness--

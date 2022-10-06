@@ -38,11 +38,12 @@ VAR TakenNap = false
 
 
 === Conclusion == 
-It's {Time >  12: {Time - 12} pm| {Time} am} right now.
+It's {Time >  12: {Time - 12}| {Time}}{Time >= 12: pm| am} right now.
+While I wasn't able to do everything I wanted to do, atleast today is over.
 {
 - Time >= 23:
 I should go to sleep now so I can go to my class tomorrow.
 - Scene_1 and Scene_2 and Scene_3 and Scene_4:
-There's nothing else to do, mind aswell head to bed.
+There's nothing else to do now, mind aswell head to bed.
 }
     -> END

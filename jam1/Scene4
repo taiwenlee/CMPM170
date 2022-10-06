@@ -1,5 +1,5 @@
 === Scene_4 ===
-It's {Time >  12: {Time - 12} pm| {Time} am} right now.
+It's {Time >  12: {Time - 12}| {Time}}{Time >= 12: pm| am} right now.
 {
 - Scene_1 and Scene_2 and Scene_3:
     Well there's nothing else I need to do today so lets take a nap.   
@@ -22,6 +22,8 @@ It's {Time >  12: {Time - 12} pm| {Time} am} right now.
      ~TakenNap = true
     ->Naps
 * {TakenNap}get out of bed
+    I really should be getting out of bed now. It's not good for me if i keep staying in bed.
     -> MainLoop
 *{not TakenNap}Lets not take a nap
+    I probably shouldn't get in the habit of taking naps.
     -> MainLoop
