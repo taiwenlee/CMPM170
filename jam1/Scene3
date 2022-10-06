@@ -1,3 +1,4 @@
 === Scene_3 ===
-3
+It's {-Time >  12: {Time} - 12 pm| {Time} am} right now.
+Lets cook some food.
 -> MainLoop

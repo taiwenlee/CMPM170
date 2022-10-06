@@ -8,6 +8,8 @@ The sound of my alarm beeping woke me up from my dream, it was the start of a to
 
 VAR Scene = 0
 VAR Time = 9
+VAR Happiness = 0
+VAR PlayedGame = false
 
 
 === MainLoop ===

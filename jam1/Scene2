@@ -1,3 +1,10 @@
 === Scene_2 ===
-2
+It's {-Time >  12: {Time} - 12 pm| {Time} am} right now.
+
+{
+-Time > 16:
+    I should've gone to class today but ended up doing other things. I hope there wasn't anything important in the lectures.
+
+}
+
 -> MainLoop
