@@ -1,8 +1,27 @@
 === Scene_4 ===
-It's {-Time >  12: {Time} - 12 pm| {Time} am} right now.
+It's {Time >  12: {Time - 12} pm| {Time} am} right now.
 {
 - Scene_1 and Scene_2 and Scene_3:
-    well there's nothing else I need to do today so lets take a nap.   
+    Well there's nothing else I need to do today so lets take a nap.   
+    ~Time++
+- Time < 24:
+    I'm feeling rather tired...
+    -> Naps
 }
     
 -> MainLoop
+
+=== Naps ===
++{Time < 24 and TakenNap}Go back to sleep
+    well It's not gonna hurt if I sleep more...
+    ~Time+= 2
+    ->Naps
+*{not TakenNap}Lets take a nap
+    After an hour passed, I woke up but felt like doing nothing.
+     ~Time++
+     ~TakenNap = true
+    ->Naps
+* {TakenNap}get out of bed
+    -> MainLoop
+*{not TakenNap}Lets not take a nap
+    -> MainLoop

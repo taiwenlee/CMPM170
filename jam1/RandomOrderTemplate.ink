@@ -11,6 +11,8 @@ VAR Time = 9
 VAR Happiness = 0
 VAR PlayedGame = false
 VAR DoneHomework = false
+VAR HomeworkDue = false
+VAR TakenNap = false
 
 
 === MainLoop ===
@@ -36,4 +38,11 @@ VAR DoneHomework = false
 
 
 === Conclusion == 
+It's {Time >  12: {Time - 12} pm| {Time} am} right now.
+{
+- Time >= 23:
+I should go to sleep now so I can go to my class tomorrow.
+- Scene_1 and Scene_2 and Scene_3 and Scene_4:
+There's nothing else to do, mind aswell head to bed.
+}
     -> END
