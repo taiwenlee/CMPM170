@@ -1,0 +1,46 @@
+=== Scene_3 ===
+It's {Time >  12: {Time - 12}| {Time}}{Time >= 12: pm| am} right now.
+{
+-Time < 11:
+    I should make a quick breakfast so I can do other things.
+    I used some leftover rice and furikake to make a simple riceball to eat along with some green tea to down it.
+    
+    ~Time++
+- Time < 14:
+    ->LUNCH
+- Time < 20:
+    ->DINNER
+
+- Time >= 24:
+    It's late now, I'm just gonna eat some instant ramen.
+}
+
+-> MainLoop
+
+=== LUNCH ===
+I'm feeling kind of hungry Since I haven't at anything
+* Make a quick meal.
+    I've decided to cook some fried eggs to go along with kimchi and rice.
+    ~Time++
+    ->MainLoop
+* Make a meal.
+{
+    - Happiness > 2:
+        Let's make some Japanese curry so I don't need to worry about food for the next couple of days.    
+    - Happiness <= 2:
+        Let's make a beef on udon meal.
+    
+}
+    ~Time+= 2
+    
+-> MainLoop
+
+=== DINNER ===
+After not eating anything for the whole day, I'm feeling famished.
+*{Happiness < -1}Order Doordash
+    Let's order some poke from the nearby. I ordered some poke with a triple scoop of salmon and many different toppings. It was delicious.
+    -> MainLoop
+*Make some frozen pizza
+    I decided to bake some frozen pizza which took another 30 minutes and was finally able to eat. The pizza was {Happiness > 0: delicious and I quickly ate it | burnt so I had to scrape the top with a fork to eat}.
+    
+-> MainLoop

@@ -1,0 +1,24 @@
+=== Scene_1 ===
+It's {Time >  12: {Time - 12}| {Time}}{Time >= 12: pm| am} right now.
+Let's hop on my pc.
+There are so many things I can do right now, but what I really want to do is play some games right now.
+->pc
+=pc
++{Time < 24}Lets play {not PlayedGame: Valorant|another...} 
+    {not PlayedGame : Nothing better than playing Valorant right now. I should be able to reach Ascendant soon... | Mind as well play another game.}
+    
+    ~temp game = RANDOM(-1,1)
+    After a hard-fought game, my team and I {game == 1: won}{game == -1: lost}{game== 0: drew} the game.
+    ~Happiness += game
+    ~PlayedGame = true
+    ~Time++
+    -> pc
+*{not HomeworkDue}Do some homework
+    I guess it's time to do the ECON100A homework that I've been procrastinating. The problems weren't hard but due to how boring it was, Youtube ended up increasing the time I spent on this.
+    ~Time++
+    ~Happiness--
+    ~DoneHomework = true
+    ~PlayedGame = false
+    ->pc
+*Stop using my pc
+-> MainLoop

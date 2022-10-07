@@ -1,0 +1,29 @@
+=== Scene_2 ===
+It's {Time >  12: {Time - 12}| {Time}}{Time >= 12: pm| am} right now.
+
+{
+-Time > 16:
+    I should've gone to class today but ended up doing other things. I hope there wasn't anything important in the lectures.
+- Time > 10:
+    I missed my first class today but I should really go to my second class. The class is CMPM121 which teaches game technologies and so far its been very interesting. Let's head up to campus with my friend to attend this class.
+    The class was pretty interesting today as we learned about how to use cameras in Unity and the differences between orthographic and perspective.
+    After class was over, I met with my friend and headed back home.
+    ~Time = 18
+- Time <= 10:
+    Just in time to go to the first class of the day, ECON100A. I went up to campus with my friend who also had the class with me.
+    The professor told us that the homework assignment was due today which I had completely forgotten.
+    {
+    - DoneHomework:
+        Thankfully, I decided to do the homework beforehand and was able to submit it.
+    - not DoneHomework:
+        I didn't do the homework and tried to copy it off my friend as quickly as I could but was only able to submit a half-complete assignment.
+        ~HomeworkDue = true
+    }
+    After ECON100A, I went to the library to work on homework while I waited for the CMPM121 class at 4.
+    The class eventually came around and I headed to Baskins 152.
+    The class was pretty interesting today as we learned about how to use cameras in Unity and the differences between orthographic and perspective.
+    After class was over, I met with my friend and headed back home.
+    ~Time = 18
+}
+
+-> MainLoop
